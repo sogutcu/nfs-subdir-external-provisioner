@@ -4,7 +4,9 @@ on:
   push:
     tags:
       - 'gh-v*.*.*'
-
+env:
+  DOCKER_IMAGE: nfs-subdir-external-provisioner
+  
 jobs:
   docker:
     runs-on: ubuntu-latest
